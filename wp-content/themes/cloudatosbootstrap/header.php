@@ -53,7 +53,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="MAXI Trade"></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt=<?php bloginfo('name') ?>></a>
             </div>
 <!-- If the menu (WP admin area) is not set then the "menu_class" is applied to "container". In other words it overwrites the "container_class". Ref: http://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug?replies=4 -->
             <?php
@@ -71,14 +71,7 @@
     </nav>
 
     <!-- Header -->
-    <header >
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Maxi Trade!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
+
+
 
 	<div id="content" class="site-content">

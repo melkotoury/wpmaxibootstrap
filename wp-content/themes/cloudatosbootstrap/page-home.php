@@ -17,8 +17,20 @@
  * @package cloudatos Bootstrap
  */
 
+//Custom Fields
+$button_scroll_to_next_section_text =   get_post_meta(7,'button_scroll_to_next_section_text',true);
+$button_scroll_to_next_section_url  =   get_post_meta(7,"button_scroll_to_next_section_url",true);
 get_header(); ?>
 
+<header >
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Welcome To <?php bloginfo('name') ?></div>
+            <div class="intro-heading"><?php bloginfo('description') ?></div>
+            <a href=#<?php echo $button_scroll_to_next_section_url; ?> class="page-scroll btn btn-xl"><?php echo $button_scroll_to_next_section_text; ?></a>
+        </div>
+    </div>
+</header>
 <!-- Services Section -->
 <section id="services">
     <div class="container">
@@ -58,7 +70,7 @@ get_header(); ?>
 </section>
 
 <!-- Products Grid Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="products" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -67,86 +79,86 @@ get_header(); ?>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a href="#productsModal1" class="products-link" data-toggle="modal">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/portfolio/luffa.png" class="img-responsive" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/products/luffa.png" class="img-responsive" alt="">
                 </a>
-                <div class="portfolio-caption">
+                <div class="products-caption">
                     <h4>Luffa Products</h4>
                     <p class="text-muted">Health And Beauty</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a href="#productsModal2" class="products-link" data-toggle="modal">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/portfolio/salsa.png" class="img-responsive" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/products/salsa.png" class="img-responsive" alt="">
                 </a>
-                <div class="portfolio-caption">
+                <div class="products-caption">
                     <h4>Salsa Products</h4>
                     <p class="text-muted">Food Products</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a href="#productsModal3" class="products-link" data-toggle="modal">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/portfolio/Cheese.png" class="img-responsive" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/products/Cheese.png" class="img-responsive" alt="">
                 </a>
-                <div class="portfolio-caption">
+                <div class="products-caption">
                     <h4>Cheese Products</h4>
                     <p class="text-muted">Food Products</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a href="#productsModal4" class="products-link" data-toggle="modal">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/portfolio/chicken.png" class="img-responsive" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/products/chicken.png" class="img-responsive" alt="">
                 </a>
-                <div class="portfolio-caption">
+                <div class="products-caption">
                     <h4>Chicken Products</h4>
                     <p class="text-muted">Food Products</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a href="#productsModal5" class="products-link" data-toggle="modal">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/portfolio/Juice.png" class="img-responsive" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/products/Juice.png" class="img-responsive" alt="">
                 </a>
-                <div class="portfolio-caption">
+                <div class="products-caption">
                     <h4>Juice Products</h4>
                     <p class="text-muted">Beverages Products</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a href="#productsModal6" class="products-link" data-toggle="modal">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/portfolio/dreams.png" class="img-responsive" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/products/dreams.png" class="img-responsive" alt="">
                 </a>
-                <div class="portfolio-caption">
+                <div class="products-caption">
                     <h4>Dreams</h4>
                     <p class="text-muted">Website Design</p>
                 </div>
